@@ -1,10 +1,14 @@
 import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./components/AppRouter";
+import Navabr from "./components/Navbar";
 
 function App() {
   return (
-    <div>
-      Hello world
-    </div>
+    <BrowserRouter>
+      <Navabr/>
+      <AppRouter/>
+    </BrowserRouter>
   );
 }
 
