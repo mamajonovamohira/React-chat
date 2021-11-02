@@ -4,7 +4,7 @@ import { privateRoutes, publicRoutes } from '../routes';
 import { CHAT_ROUTE, LOGIN_ROUTE } from '../util/const';
 
 const AppRouter = () => {
-  const user = true
+  const user = false
   return user ?
   (
     <Switch>

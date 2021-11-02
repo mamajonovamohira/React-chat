@@ -1,10 +1,22 @@
-import React from 'react';
+import { AppBar, Button, Grid, Toolbar } from "@material-ui/core";
+import React from "react";
 
-function Navabr() {
+const Navabr = () => {
+  const user = true
+
   return (
-    <div>
-      Navbar
-    </div>
+    <AppBar color={"primary"} position="static">
+      <Toolbar>
+        <Grid container justify={"flex-end"}>
+          {user ?
+          <Button variant={"outlined"}>Quit</Button>
+            :
+          <Button variant={"outlined"}>Login</Button>
+
+          }
+        </Grid>
+      </Toolbar>
+    </AppBar>
   );
 }
 
