@@ -1,4 +1,4 @@
-import { Container, Grid } from '@material-ui/core';
+import { Box, Button, Container, Grid } from '@material-ui/core';
 import React from 'react';
 
 function Login() {
@@ -9,7 +9,15 @@ function Login() {
         alignItems={"center"}
         justify={"center"}
       >
-        Hello
+        <Grid style={{width: 400, background: "lightgray"}}
+          container
+          alignItems={"center"}
+          direction={"column"}
+        >
+          <Box p={5}>
+            <Button variant={"outlined"}>Войти с помощъю GOOGLE</Button>
+          </Box>
+        </Grid>
       </Grid>
     </Container>
   );
